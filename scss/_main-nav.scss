@@ -1,3 +1,5 @@
+@import "./mixins";
+
 .main-nav {
 	width: 140px;
 	flex-shrink: 0;
@@ -22,9 +24,7 @@
 }
 
 .nav-list {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+	@include list-reset;
 
 	@media (max-width: $tablet-width) {
 		display: flex;
@@ -94,9 +94,7 @@
 }
 
 .join-list {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+	@include list-reset;
 
 	@media (max-width: $tablet-width) {
 		display: none;

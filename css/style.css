@@ -513,9 +513,9 @@ a {
 
 .buttons-list {
   list-style: none;
-  display: flex;
   margin: 0;
   padding: 0;
+  display: flex;
   flex-shrink: 0;
 }
 @media (max-width: 768px) {

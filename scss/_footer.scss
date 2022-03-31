@@ -1,3 +1,5 @@
+@import "./mixins";
+
 .footer {
 	display: flex;
 	justify-content: space-between;
@@ -7,9 +9,7 @@
 }
 
 .politics-list {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+	@include list-reset;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -53,9 +53,7 @@
 }
 
 .socials-list {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+	@include list-reset;
 	display: flex;
 	gap: 4px;
 }
