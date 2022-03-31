@@ -1,0 +1,7 @@
+.main {
+	max-width: 896px;
+
+	@media (max-width: $tablet-width-L) {
+		max-width: 712px;
+	}
+}

@@ -1,0 +1,72 @@
+@import "./variables";
+
+body {
+	margin: 46px 0 0 0;
+	padding: 0;
+	font-family: $main-font;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+
+	@media (max-width: $tablet-width) {
+		margin: 20px 0 0 0;
+	}
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.center {
+	max-width: 1120px;
+	padding: 0 20px;
+	margin: 0 auto;
+
+	@media (max-width: $tablet-width-L) {
+		max-width: 936px;
+	}
+
+	@media (max-width: $tablet-width) {
+		max-width: 750px;
+	}
+
+	@media (max-width: $mobile-width-L) {
+		max-width: 585px;
+	}
+
+	@media (max-width: $mobile-width) {
+		max-width: 480px;
+	}
+}
+
+.flex-wrap {
+	display: flex;
+	gap: 44px;
+
+	@media (max-width: $tablet-width) {
+		flex-direction: column;
+	}
+}

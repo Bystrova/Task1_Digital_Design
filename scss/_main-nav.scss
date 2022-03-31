@@ -1,0 +1,149 @@
+.main-nav {
+	width: 140px;
+	flex-shrink: 0;
+
+	@media (max-width: $tablet-width) {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	@media (max-width: $mobile-width) {
+		flex-direction: column-reverse;
+		gap: 24px;
+	}
+}
+
+.logo-link {
+	@media (max-width: $tablet-width) {
+		flex-shrink: 0;
+	}
+}
+
+.nav-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	@media (max-width: $tablet-width) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+	}
+}
+
+.nav-item {
+	@media (max-width: $tablet-width) {
+		margin: 0 0 0 40px;
+	}
+
+	@media (max-width: $mobile-width-L) {
+		margin: 0 0 0 30px;
+
+		&:first-child {
+			margin: 0;
+		}
+	}
+}
+
+.nav-link {
+	font-style: italic;
+	font-size: 14px;
+	line-height: 14px;
+	color: $basic-green;
+	display: flex;
+	padding: 0 0 13px 0;
+	margin: 0 0 20px 0;
+	align-items: center;
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&:hover .nav-img path {
+		fill: $basic-green;
+	}
+
+	&:active {
+		text-decoration: none;
+	}
+
+	&:active .nav-img path {
+		fill: $basic-black;
+	}
+
+	@media (max-width: $tablet-width) {
+		flex-direction: column;
+		margin: 0;
+	}
+}
+
+.nav-img {
+	@media (max-width: $mobile-width-L) {
+		display: none;
+	}
+}
+
+.nav-link-text {
+	margin: 0 0 0 12px;
+
+	@media (max-width: $tablet-width) {
+		margin: 12px 0 0 0;
+	}
+}
+
+.join-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	@media (max-width: $tablet-width) {
+		display: none;
+	}
+}
+
+.join-heading {
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 12px;
+	font-family: $sub-font;
+	display: block;
+	border-bottom: 1px dashed $basic-grey;
+	margin: 0 0 9px 0;
+	padding: 5px 0;
+}
+
+.join-text {
+	font-style: italic;
+	font-size: 10px;
+	line-height: 19px;
+}
+
+.join-link {
+	display: flex;
+	align-items: center;
+	min-height: 30px;
+	border: 1px solid $basic-grey;
+	border-radius: 5px;
+	padding: 0 10px 0 7px;
+
+	&:hover {
+		background-color: $basic-light-green;
+	}
+
+	&:active {
+		background-color: $basic-active-green;
+	}
+}
+
+.join-link-img {
+	margin: 0 6px 0 0;
+}
+
+.join-link-text {
+	font-style: italic;
+	font-size: 10px;
+	line-height: 12px;
+	color: $basic-green;
+}

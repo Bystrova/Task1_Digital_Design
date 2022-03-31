@@ -1,0 +1,125 @@
+.slider {
+	margin: 0 0 30px 0;
+
+	@media (max-width: $mobile-width) {
+		width: 100vw;
+		margin: 0 0 30px -20px;
+	}
+}
+
+.slider-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.slider-item {
+	max-height: 445px;
+	background: url("/images/photos/slider/banner-desktop.jpg") center no-repeat;
+	padding: 285px 0 69px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	@media (max-width: $tablet-width-L) {
+		background: url("/images/photos/slider/banner-tablet-L.jpg") center no-repeat;
+	}
+
+	@media (max-width: $mobile-width-L) {
+		background: url("/images/photos/slider/banner-mobile-L.jpg") center no-repeat;
+		align-items: stretch;
+		padding: 262px 0 0 0;
+	}
+
+	@media (max-width: $mobile-width) {
+		background: url("/images/photos/slider/banner-mobile.jpg") center no-repeat;
+	}
+}
+
+.slider-heading {
+	font-style: italic;
+	font-size: 22px;
+	line-height: 22px;
+	background-color: $basic-white;
+	padding: 12px 20px;
+	margin: 0;
+
+	@media (max-width: $mobile-width-L) {
+		background-color: $basic-opacity-white;
+	}
+
+	@media (max-width: $mobile-width) {
+		padding: 12px 6px;
+	}
+}
+
+.slider-description {
+	font-style: italic;
+	font-size: 14px;
+	line-height: 14px;
+	background-color: $basic-black;
+	color: $basic-white;
+	padding: 14px 20px 14px 24px;
+	margin: 0;
+
+	@media (max-width: $mobile-width) {
+		padding: 14px 20px 14px 6px;
+	}
+}
+
+.buttons-list {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	flex-shrink: 0;
+
+	@media (max-width: $mobile-width-L) {
+		display: none;
+	}
+}
+
+.buttons-item {
+	flex-grow: 1;
+	margin: 0 1px 0 0;
+
+	&:last-child {
+		margin: 0;
+	}
+}
+
+.buttons-button {
+	padding: 26px 20px 22px;
+	border: none;
+	background-color: $basic-light-green;
+	cursor: pointer;
+	color: $basic-green;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	font-size: 18px;
+	line-height: 18px;
+	width: 100%;
+
+	&:hover,
+	&.active {
+		background-color: $basic-active-green;
+	}
+
+	@media (max-width: $tablet-width-L) {
+		align-items: center;
+		font-size: 14px;
+		line-height: 14px;
+		padding: 10px 20px 11px;
+	}
+}
+
+.buttons-text {
+	font-style: italic;
+	font-size: 10px;
+	line-height: 19px;
+
+	@media (max-width: $tablet-width-L) {
+		display: none;
+	}
+}

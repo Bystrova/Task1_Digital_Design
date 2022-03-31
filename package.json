@@ -1,0 +1,21 @@
+{
+	"name": "task1_digital_design",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.html",
+	"dependencies": {
+		"gulp": "^4.0.2"
+	},
+	"devDependencies": {
+		"gulp-concat": "^2.6.1",
+		"gulp-sass": "^5.1.0",
+		"sass": "^1.49.9"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"compile": "gulp styles",
+		"watch": "gulp watcher"
+	},
+	"author": "",
+	"license": "ISC"
+}

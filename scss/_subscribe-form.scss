@@ -1,0 +1,81 @@
+.subscribe-form {
+	display: flex;
+	gap: 18px;
+	padding: 8px 18px;
+	margin: 0 0 30px 0;
+	align-items: center;
+	border-top: 1px dashed $basic-grey;
+	border-bottom: 1px dashed $basic-grey;
+
+	@media (max-width: $tablet-width) {
+		gap: 10px;
+		padding: 8px;
+	}
+
+	@media (max-width: $mobile-width-L) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	// @media (max-width: $mobile-width) {
+	// 	justify-content: center;
+	// }
+}
+
+.subscribe-label {
+	max-width: 578px;
+	display: flex;
+	font-style: italic;
+	font-size: 14px;
+	line-height: 16px;
+	gap: 16px;
+
+	@media (max-width: $mobile-width-L) {
+		justify-self: stretch;
+	}
+}
+
+.subscribe-icon {
+	flex-shrink: 0;
+}
+
+.subscribe-input {
+	border: 1px solid $basic-grey;
+	outline: none;
+	padding: 3px 6px;
+
+	&::placeholder {
+		color: $basic-grey;
+		font-size: 10px;
+		line-height: 10px;
+	}
+
+	@media (max-width: $mobile-width-L) {
+		width: 75%;
+	}
+}
+
+.subscribe-button {
+	font-size: 10px;
+	line-height: 10px;
+	border: 1px solid $basic-grey;
+	background: linear-gradient(to bottom, $basic-light-grey, $basic-dark-grey);
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 6px 0 7px;
+
+	&:hover {
+		background: linear-gradient(to bottom, $basic-dark-grey, $basic-light-grey);
+	}
+
+	&:active {
+		background: linear-gradient(to bottom, $basic-light-grey, $basic-dark-grey);
+	}
+
+	@media (max-width: $mobile-width-L) {
+		width: 20%;
+	}
+}
