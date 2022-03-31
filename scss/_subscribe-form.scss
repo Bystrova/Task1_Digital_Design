@@ -65,7 +65,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 6px 0 7px;
+	padding: 6px 17px 7px;
 
 	&:hover {
 		background: linear-gradient(to bottom, $basic-dark-grey, $basic-light-grey);
@@ -77,5 +77,6 @@
 
 	@media (max-width: $mobile-width-L) {
 		width: 20%;
+		padding: 6px 0 7px;
 	}
 }
