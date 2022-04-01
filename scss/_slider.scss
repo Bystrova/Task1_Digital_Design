@@ -1,4 +1,4 @@
-@import "./mixins";
+@import "./variables", "./base", "./mixins";
 
 .slider {
 	margin: 0 0 30px 0;
